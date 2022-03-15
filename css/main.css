@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+
+/*메인슬라이더*/
+.mainSlider{
+    text-align: center;
+    background: url(../images/main/mainSlider01.png) no-repeat center center;
+    height: 980px;
+    width: 100%;
+    overflow: hidden;
+}
+.sliderTxt{
+    font-size: 5rem;
+    padding-top: 700px;
+    color: #f3f3f3;
+}
+.sliderTxt p{
+    display: block;
+    font-family: 'NotoSerif';
+    font-weight: 100;
+}
+.sliderTxt p span{font-weight: 900;}
+
+.bottomIcon{position: relative;}
+.bottomAroow{
+    position: absolute;
+    animation: bottomAroow 0.5s infinite linear alternate;
+}
+
+@keyframes bottomAroow{
+    from{top: 10px;}
+    to{top: 18px;}
+}
+
+
+
+
+/*컨텐츠01*/
+.container{}
+.mainCon01{position: relative;}
+.con01Txt{
+    position: absolute;
+    top: 400px;
+    right: 15%;
+    width: 27%;
+    box-sizing: border-box;
+}
+.con01Txt h2{font-size: 8rem;}
+.con01Txt p{
+    padding-top: 10px;
+    font-size: 2.4rem;
+    line-height: 40px;
+}
+
+.con01StoryBox{
+    padding-top: 300px;
+    position: relative;
+    height: 3300px;
+    text-align: center;
+}
+
+.storyBox01{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    left: 15%;;
+    width: 30%;
+    border-radius: 5%;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    background: #fff;
+    margin-bottom: 300px; /*맨 마지막 스토리박스랑 그 전 박스가 겹치지 않는다면 부모 heiht를 그 px만큼 더해주면 됨*/
+    padding: 40px;
+    box-sizing: border-box;
+}
+.storyBox01>img{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.quotes{padding-bottom: 15px;}
+.storyBox01 p{
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+}
+.storyBox01 span{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 1.4rem;
+    color: #999;
+}
+
+.moreBtn{
+    position: absolute;
+    left: 20%;
+    bottom: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px #333 solid;
+    border-radius: 25px;
+}
+.moreBtn a{display: block;}
+.moreBtn:hover{
+    background: #9E9487;
+    border: #9E9487 1px solid;
+}
+.moreBtn:hover a{color: #f3f3f3;}
+.moreBtn{transition: background 0.6s;}
+.moreBtn a{transition: color 0.6s;}
+
+
+
+
+/*메인컨텐츠02*/
+.mainCon02{
+    position: relative;
+    text-align: center;
+    padding-top: 450px;
+}
+.mainCon02 h2{font-size: 8rem;}
+.mainCon02>p{
+    padding-top: 10px;
+    font-size: 2.4rem;
+}
+
+.con02IconList{padding-top: 130px;}
+.con02IconList li{
+    margin: 0 40px;
+    display: inline-block;
+    font-size: 1.6rem;
+}
+.con02IconList li a{
+    text-align: center;
+    width: 108px;
+    height: 108px;
+    line-height: 108px;
+    border-radius: 25px;
+    display: block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+}
+.con02IconList li img{vertical-align: middle;}
+.con02IconList li p{padding-top: 15px;}
+
+.con02IconList li a:hover{background: #9E9487;}
+.con02IconList li a{transition: background 0.8s;}
+.con02IconList li a:hover img, .on{display: none;}
+.con02IconList li a:hover .on{display: inline-block;}
+
+.con02Line{}
+.line01{
+    position: absolute;
+    top: 460px;
+    left: 160px;
+}
+.line02{
+    position: absolute;
+    top: 460px;
+    right: 160px;
+}
+
+
+
+/*메인컨텐츠03*/
+.mainCon03{
+    margin-top: 180px;
+    position: relative;
+    background: url(../images/main/con03bg.png) no-repeat center center;
+    height: 600px;
+    text-align: center;
+    color: #f3f3f3;
+}
+.mainCon03 h2{
+    padding-top: 140px;
+    font-size: 3.6rem;
+    font-weight: 100;
+}
+.mainCon03 p{
+    font-family: 'notoserif';
+    font-size: 2.4rem;
+}
+.mainCon03 .moreBtn{
+    width: 450px;
+    bottom: 60px;
+    left: 50%;
+    margin-left: -225px;
+    border: 1px #f3f3f3 solid;
+    
+}
+.mainCon03 .moreBtn a{
+    color: #f3f3f3;
+}
+
+.mainCon03 .moreBtn:hover{
+    background: #f3f3f3;
+    border: #f3f3f3 1px solid;
+}
+.mainCon03 .moreBtn:hover a{
+    color: #333;
+}
+.mainCon03 .moreBtn{
+    transition: background 0.6s;
+}
+.mainCon03 .moreBtn a{
+    transition: color 0.6s;
+}
+
+
+
+
+/*메인컨텐츠04*/
+.mainCon04{
+    position: relative;
+    padding-top: 400px;
+}
+.mainCon04 h2{
+    width: 40%;
+    position: absolute;
+    top: 42%;
+    left: 55%;
+    font-size: 6rem;
+}
+.mainCon04 h2 span{display: block;}
+
+.con04List{}
+.con04List li{position: relative;}
+.con04List li img{width: 47%;}
+.con04TxtBox01{
+    position: absolute;
+    width: 40%;
+    box-sizing: border-box;
+    top: 40%;
+    left: 55%;
+}
+.con04TxtBox01 h4{
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+.con04TxtBox01 p{
+    line-height: 3rem;
+    font-size: 1.8rem;
+}
+.con04TxtBox01 p span{display: block;}
+.moreBtn02{
+    position: absolute;
+    bottom: -100px;
+    font-size: 1.4rem;
+    text-align: center;
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px #333 solid;
+    border-radius: 25px;
+}
+.moreBtn02 a{display: block;}
+.moreBtn02:hover{
+    background: #9E9487;
+    border: #9E9487 1px solid;
+}
+.moreBtn02:hover a{color: #f3f3f3;}
+.moreBtn02{transition: background 0.6s;}
+.moreBtn02 a{transition: color 0.6s;}
+
+
+
+/*메인컨텐츠05*/
+.mainCon05{}
+
+
+
+
+
+
+
+
+
+
+

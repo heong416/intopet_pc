@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+/*웹뷰 안보임 처리*/
+.mBottomIcon, .panel, .mCon01, .mCon02, .mCon03, .mCon04, .mCon05{display: none}
+
+
+/*모바일뷰*/
+@media screen and (max-width:980px){
+    body{min-width:auto;}
+    .inner{width:auto;}
+
+    
+    /*안보임 처리*/
+    .gnb, .snb, .mainCon01, .mainCon02, .mainCon03, .mainCon04, .mainCon05, .bottomIcon{display: none;}
+    
+
+    
+    /*헤더*/
+    .hWrap{
+        right: 0;
+        background: rgba(0,0,0,0.4);
+        vertical-align: middle;
+    }
+    .logo{
+        display: inline-block;
+        margin-left: 25px;
+        padding-top: 13px;
+    }
+    .logo a img{width: 100px;}
+    .panel{
+        position: absolute;
+        top: 16px;
+        right: 25px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .panel img{width: 25px;}
+    
+    
+    
+    /*메인슬라이더*/
+    .mainSlider{
+        background-size: cover;
+        height: 400px;
+    }
+    .mBottomIcon{position: relative;}
+    .mBottomAroow{
+    position: absolute;
+    animation: mBottomAroow 1s infinite linear alternate;
+    }
+    @keyframes mBottomAroow{
+        from{top: 10px;}
+        to{top: 18px;}
+    }
+    .sliderTxt{
+        letter-spacing: 3px;
+        font-size: 2rem;
+        line-height: 0px;
+        padding-top: 300px;
+        color: #f3f3f3;
+    }
+    .mBottomIcon{
+        padding-top: 10px;
+        display: block;
+    }
+
+    
+    
+    /*모바일컨텐츠01*/
+    .mCon01{
+        display: block;
+        text-align: center;
+        padding-top: 20%;
+        padding-bottom: 30%;
+        background: #DACFC1;
+    }
+    .mCon01 h2{
+        font-size: 3.6rem;
+    }
+    .mCon01>p{
+        line-height: 26px;
+        padding-bottom: 8%;
+    }
+    .mCon01>p span{display: block;}
+    .mStoryBox01{
+        display: block;
+        padding: 0.8%;
+        border-radius: 5%;
+        box-sizing: border-box;
+        background: #fff;
+        margin-bottom: 30px;
+    }
+    .mStoryBox01 img{width: 100%;}
+    .mStoryBox01 p{
+        font-size: 1.4rem;
+        line-height: 20px;
+    }
+    .mStoryBox01 span{
+        display: block;
+        padding-top: 15px;
+        color: #999;
+        font-size: 1.2rem;
+    }
+    .mMoreBtn{
+        margin: 0 auto;
+        width: 85%;
+        height: 50px;
+        line-height: 50px;
+        background: #DACFC1;
+        border-radius: 15px;
+        border: 2px solid #f3f3f3;
+    }
+    .mMoreBtn a{
+        color: #f3f3f3;
+        display: block;
+    }
+    
+    
+    
+    /*모바일컨텐츠02*/
+    .mCon02{
+        padding-top: 20%;
+        display: block;
+        text-align: center;
+    }
+    .mCon02 h2{font-size: 3.5rem;}
+    .careListWrap{padding-top: 10%;}
+    .careList01 li{
+        font-size: 1.4rem;
+        padding: 0 30px;
+        display: inline-block;
+    }
+    .careList01 li a{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 15%;
+        background: #9E9487;
+        vertical-align: middle;
+    }
+    .careList01 li a img{vertical-align: middle;}
+    .careList02{padding-top: 5%;}
+    
+    
+    
+    /*모바일컨텐츠03*/
+    .mCon03{
+        font-family: "notoserif";
+        margin-top: 25%;
+        text-align: center;
+        display: block;
+        color: #f3f3f3;
+        height: 600px;
+        background: url(../images/main/mCon03Bg.png) no-repeat center center;
+        background-size: cover;
+    }
+    .mCon03 h2{
+        font-size: 2.2rem;
+        line-height: 4rem;
+        font-weight: 200;
+        padding-top: 120px;
+    }
+    .mCon03 h2 span{
+        display: block;
+    }
+    .mCon03 p{
+        font-size: 1.4rem;
+        padding-top: 20px;
+    }
+    .mCon03 .mMoreBtn{
+        width: 300px;
+        border: 1px solid #f3f3f3;
+        margin-top: 80px;
+        background: none;
+    }
+    
+    
+    
+    /*모바일컨텐츠04*/
+    .mCon04{
+        display: block;
+        padding: 20% 0;
+        text-align: center;
+        background: #B2AFAA;
+    }
+    .mCon04 h2{
+        font-size: 3.6rem;
+    }
+    .mCon04List{
+        display: block;
+        margin-top: 10%;
+    }
+    .mCon04List li{
+        margin: 0 1.3%;
+        height: 250px;
+        color: #f3f3f3;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .mCon04List h4{font-size: 1.8rem;}
+    .mCon04List p{
+        padding-top: 10px;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    .mCon04List p span{display: block;}
+    .mCon04 .mMoreBtn{
+        margin-top: 60px;
+        width: 80%;
+        background: none;
+        max-width: 450px;
+        font-size: 1.2rem;
+    }
+    .mCon04List01{background: url(../images/main/mCon04Img01.png)no-repeat center center; background-size: cover;}
+    .mCon04List02{background: url(../images/main/mCon04Img02.png)no-repeat center center; background-size: cover;}
+    .mCon04List03{background: url(../images/main/mCon04Img03.png)no-repeat center center; background-size: cover;}
+    
+    
+    
+    /*모바일컨텐츠05*/
+    .mCon05{
+        display: block;
+        background: #fff;
+    }
+    .mCon05List li{color: #333;}
+    .mCon05List li a{font-size: 1.2rem;}
+    .mCon05List li h4{
+        margin-top: 25px;
+    }
+    .mCon05List01, .mCon05List02, .mCon05List03{
+        margin: 0 2%;
+        background: #F8F6F3;
+    }
+    
+    .mCon05 .mMoreBtn{
+        margin-top: 60px;
+        width: 80%;
+        background: none;
+        border: 1px solid #333;
+    }
+    .mCon05 .mMoreBtn a{color: #333;}
+    
+    
+    
+    /*푸터*/
+    
+    #footer{
+        padding-top: 80px;
+    }
+    #footer::before{
+        width: 88%;
+        margin-bottom: 65px;
+    }
+    .topBtn{
+        top: 60px;
+        right: 5%;animation: topBtn 1s infinite linear alternate;
+    }
+    @keyframes topBtn{
+        from{top: 50px;}
+        to{top: 65px;}
+    }
+    .topBtn img{width: 44px;}
+    .topBtn a{font-size: 1.2rem;}
+    
+    
+    .fLeft{
+        width: auto;
+        margin-left: 0px;
+        text-align: center;
+        font-size: 1.2rem;}
+    .fLogo{padding-bottom: 25px;}
+    .fLogo img{width: 130px;}
+    .fLeftTxtBox{padding: 0 20px;}
+    .fLeftTxtBox li span{display: block; padding-top: 10px;}
+    .copy{padding-top: 0;}
+
+    .snsList{
+        position: absolute;
+        left: 50%;
+        margin-left: -87px;
+        margin-top: 20px;
+    }
+    .snsList li{
+        margin-right: 0;
+        margin: 0 10px;
+        margin-bottom: 15%;
+        float: left;
+    }
+    .snsList li img{width: 38px;}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+

@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+
+a{outline: none;}
+.con04List li img{position: relative;}
+.slideBtn{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.2);
+    cursor: pointer;
+    z-index: 9999;
+}
+.slideBtn img{vertical-align: middle;}
+.slideBtn:hover{background: #000;}
+.slideBtn{transition: background 0.5s;}
+
+.slidePrev{
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    z-index: 99999;
+}
+.slideNext{
+    position: absolute;
+    top: 45%;
+    right: 56%;
+    z-index: 99999;
+}
+
+
+
+
+
+@media screen and (max-width:980px){
+ 
+    .slideBtn:hover{background: rgba(0,0,0,.2);}
+    
+    /*모바일컨텐츠01*/
+    .mCon01 .slick-slider{margin: 0 auto;}
+    .mCon01{position: relative;}
+    .mCon01 .slidePrev{
+        position: absolute;
+        top: 50%;
+        left: -5%;
+    }
+    .mCon01 .slideNext{
+        position: absolute;
+        top: 50%;
+        right: -5%;
+    }
+    
+    
+    /*모바일컨텐츠04*/
+    .mCon04 .slick-slide img{
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .mCon04 .slideNext{top: 50%; margin-top: -25px; right: 6.3%;}
+    .mCon04 .slidePrev{top: 50%; margin-top: -25px; left: 6.3%;}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
